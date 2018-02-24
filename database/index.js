@@ -1,5 +1,6 @@
 const exampleData = [
-  { name: 'aute aliqua. ',
+  {
+    name: 'aute aliqua. ',
 description: 'nulla ',
 price: 675,
 itemCreation: 'elit, ',
@@ -8,7 +9,8 @@ materials: 'id sed in ' },
 description: 'non ',
 price: 852,
 itemCreation: 'do ',
-materials: 'esse ut nostrud ' },
+materials: 'esse ut nostrud ' 
+  },
 { name: 'et veniam, ',
 description: 'nisi ',
 price: 555,
