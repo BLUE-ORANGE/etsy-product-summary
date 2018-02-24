@@ -6,7 +6,7 @@ const db = require('../database/index.js');
 
 const app = express();
 
-app.use(express.static(__dirname + '/../client/dist'));
+app.use(express.static(__dirname + '/../src/client'));
 
 app.use('/v1/product', router);
 

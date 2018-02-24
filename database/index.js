@@ -1021,7 +1021,7 @@ const Product = sqlz.define('product', {
   })
 
 
-  Product.sync({force: false}).then(() => {
+  Product.sync({force: true}).then(() => {
     Product.bulkCreate(exampleData)
     .then(data => {
       console.log(`saved: ${data}`)
