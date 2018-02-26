@@ -1021,14 +1021,25 @@ const Product = sqlz.define('product', {
   })
 
 
-  Product.sync({force: true}).then(() => {
-    Product.bulkCreate(exampleData)
-    .then(data => {
-      console.log(`saved: ${data}`)
-    })
-    .catch(err => {
-      console.log(`err: ${err}`)
-    })
-  });
+  // Product.sync({force: true}).then(() => {
+  //   Product.bulkCreate(exampleData)
+  //   .then(data => {
+  //     console.log(`saved: ${data}`)
+  //   })
+  //   .catch(err => {
+  //     console.log(`err: ${err}`)
+  //   })
+  // });
 
-  module.exports; 
+  let find = (callback) => {
+  Product.findAll({
+    attributes: ['name']
+  }).then(data => {
+    console.log(data);
+    callback(data);
+  }).catch(err => {
+    console.log(`err: ${err}`)
+  })
+};
+
+  module.exports.find = find; 
