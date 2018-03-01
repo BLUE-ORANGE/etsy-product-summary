@@ -4,7 +4,11 @@ const router = require('./router.js');
 
 const db = require('../database/index.js');
 
+const bodyParser = require('body-parser');
+
 const app = express();
+
+app.use(bodyParser.text());
 
 app.use(express.static(__dirname + '/../src/client'));
 

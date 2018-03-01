@@ -13,12 +13,31 @@ class App extends React.Component {
       name: 'HANDMADE ROCKS',
       price: 100,
     };
+    this.random.bind(this);
+    this.fetch();
+  }
+
+  random() {
+    return Math.floor(Math.random() * 200);
   }
 
   fetch() {
+    const randomNum = this.random();
     $.ajax({
-      
-    })
+      url: `/v1/product/${randomNum}/summary`,
+      type: 'GET',
+      success: (data) => {
+        console.log('getting data!');
+        console.log(data);
+        this.setState({
+          name: data[0].name,
+          price: data[0].price,
+        });
+      },
+      error: () => {
+        console.log('failed to fetch');
+      },
+    });
   }
 
   render() {

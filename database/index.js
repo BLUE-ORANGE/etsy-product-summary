@@ -1034,10 +1034,9 @@ const Product = sqlz.define('product', {
   let find = (id, callback) => {
   Product.findAll({
     where: {
-      productId: id,
+      id: id,
     },
   }).then(data => {
-    console.log(data);
     callback(data);
   }).catch(err => {
     console.log(`err: ${err}`)
