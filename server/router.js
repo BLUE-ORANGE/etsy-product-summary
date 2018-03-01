@@ -6,7 +6,7 @@ const db = require('../database/index.js');
 
 router.route('/:id/summary')
   .get((req, res) => {
-    let id = req.params.id;
+    const { id } = req.params;
     res.send(id);
   });
 

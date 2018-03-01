@@ -1,7 +1,7 @@
 import React from 'react';
 
-const ProductName = (props) => (
-  <div> {props.name} </div> 
-)
+const ProductName = ({ name }) => (
+  <div className="productName"> {name} </div>
+);
 
-export default ProductName; 
+export default ProductName;

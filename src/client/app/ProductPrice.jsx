@@ -1,7 +1,7 @@
-import React from 'react'; 
+import React from 'react';
 
-const ProductPrice = (props) => (
-    <div> ${props.price} </div> 
-)
+const ProductPrice = props => (
+  <div className="productPrice"> ${props.price}.00 </div>
+);
 
-export default ProductPrice; 
+export default ProductPrice;

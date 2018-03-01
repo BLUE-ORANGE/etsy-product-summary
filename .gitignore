@@ -57,7 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
-client/dist/
-.DS_Store
+src/client/public/
 package-lock.json
-yarn.lock
+src/.DS_Store
+.DS_Store
+src/client/.DS_Store
