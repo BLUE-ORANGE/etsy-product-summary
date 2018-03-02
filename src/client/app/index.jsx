@@ -50,7 +50,8 @@ class App extends React.Component {
         <ProductName name={this.state.name} />
         <ProductPrice price={this.state.price} />
         Quantity: <ProductQA />
-        OVERVIEW <ProductOverview create={this.state.itemCreation} mat={this.state.itemMat} />
+        OVERVIEW
+        <ProductOverview create={this.state.itemCreation} mat={this.state.itemMat} />
       </div>
     );
   }
