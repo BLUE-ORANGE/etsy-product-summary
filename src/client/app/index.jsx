@@ -12,6 +12,8 @@ class App extends React.Component {
     this.state = {
       name: 'HANDMADE ROCKS',
       price: 100,
+      itemCreation: 'Handmade',
+      itemMat: 'wood',
     };
     this.random.bind(this);
     this.fetch();
@@ -32,6 +34,8 @@ class App extends React.Component {
         this.setState({
           name: data[0].name,
           price: data[0].price,
+          itemCreation: data[0].itemCreation,
+          itemMat: data[0].materials,
         });
       },
       error: () => {
@@ -46,7 +50,7 @@ class App extends React.Component {
         <ProductName name={this.state.name} />
         <ProductPrice price={this.state.price} />
         Quantity: <ProductQA />
-        OVERVIEW <ProductOverview />
+        OVERVIEW <ProductOverview create={this.state.itemCreation} mat={this.state.itemMat} />
       </div>
     );
   }
