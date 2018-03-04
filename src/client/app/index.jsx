@@ -46,11 +46,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="fonts">
         <ProductName name={this.state.name} />
         <ProductPrice price={this.state.price} />
-        Quantity: <ProductQA />
-        OVERVIEW
+        Quantity <ProductQA />
+        <hr className="hr" />
         <ProductOverview create={this.state.itemCreation} mat={this.state.itemMat} />
       </div>
     );

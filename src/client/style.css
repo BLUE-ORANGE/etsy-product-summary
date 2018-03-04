@@ -13,20 +13,20 @@
 }
 
 .productButton {
-    background-color: orangered; 
+    background-color: #F56400; 
     border-radius: 4px;
     color: white;
-    padding: 10px 32px;
+    padding: 10px 197px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    width: 25%;
+   
 }
 
 .productButton:hover {
     cursor: pointer;
-    background-color: red;
+    background-color: #ff6905;
 }
 
 .productQuantity {
@@ -35,6 +35,13 @@
 }
 
 .productOverview {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "GraphikWebfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+}
+
+.fonts {
+  font-size: 14px;
   font-family: "GraphikWebfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
 }
 
@@ -48,3 +55,12 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  .hr {
+    width: 475px;
+    margin-left: 2px; 
+    margin-top: 12px; 
+  }
+
+  ul { margin: 5px; }
+  
