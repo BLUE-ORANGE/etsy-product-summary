@@ -50,6 +50,7 @@ class App extends React.Component {
         <ProductName name={this.state.name} />
         <button className="emailStyling"> Ask a question </button>
         <ProductPrice price={this.state.price} />
+        <br />
         Quantity <ProductQA />
         <hr className="hr" />
         <ProductOverview create={this.state.itemCreation} mat={this.state.itemMat} />
