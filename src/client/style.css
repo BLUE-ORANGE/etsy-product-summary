@@ -63,4 +63,9 @@
   }
 
   ul { margin: 5px; }
+
+  .emailStyling {
+    display: inline-block;
+    float: right;
+  }
   

@@ -4,6 +4,10 @@ const router = express.Router();
 
 const db = require('../database/index.js');
 
+const path = require('path');
+
+router.use('/:id', express.static(path.join(__dirname, '/../src/client')));
+
 router.route('/:id/summary')
   .get((req, res) => {
     const { id } = req.params;
