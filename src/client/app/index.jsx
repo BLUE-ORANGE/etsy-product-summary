@@ -48,12 +48,14 @@ class App extends React.Component {
     return (
       <div className="fonts">
         <ProductName name={this.state.name} />
-        <button className="emailStyling"> Ask a question </button>
         <ProductPrice price={this.state.price} />
+        <button className="emailStyling"> Ask a question </button>
         <br />
         Quantity <ProductQA />
         <hr className="hr" />
         <ProductOverview create={this.state.itemCreation} mat={this.state.itemMat} />
+        <hr className="hr" />
+        
       </div>
     );
   }
