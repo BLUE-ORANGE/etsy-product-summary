@@ -43,7 +43,7 @@ class App extends React.Component {
   fetch() {
     const randomNum = this.random();
     $.ajax({
-      url: `http://localhost:3003/v1/product/${randomNum}/summary`,
+      url: `http://127.0.0.1:3003/v1/product/${randomNum}/summary`,
       type: 'GET',
       success: (data) => {
         console.log('getting data!');
@@ -79,4 +79,4 @@ class App extends React.Component {
   }
 }
 
-export default ReactDOM.render(<App />, document.getElementById('app'));
+export default ReactDOM.render(<App />, document.getElementById('product-summary'));

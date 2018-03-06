@@ -138,6 +138,7 @@
     border-top-color: rgba(0, 0, 0, 0.2);
     border-style: solid;
     color: #222;
+    font-size: 14px;
   }
 
   .select {
@@ -151,7 +152,13 @@
     border-width: 1px;
   }
 
-  #app {
+  .qSelect {
+    width: 40px;
+    font-size: 11px;
+    height: 22px;
+  }
+
+  #product-summary {
     width: 410px;
   }
 

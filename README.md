@@ -20,6 +20,16 @@
 
 > Some usage instructions
 
+npm run server-dev
+
+in a new terminal 
+
+npm run react-dev
+
+for localhost 3003 
+
+npm run seedData
+
 ## Requirements
 
 An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).

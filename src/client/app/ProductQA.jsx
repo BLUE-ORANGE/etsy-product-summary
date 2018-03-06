@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProductQA = () => (
   <div className="productQuantity">
-    <select>
+    <select className="qSelect">
       <option> 1 </option>
       <option> 2 </option>
       <option> 3 </option>
