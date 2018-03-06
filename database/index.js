@@ -1021,15 +1021,15 @@ const Product = sqlz.define('product', {
   })
 
 
-  Product.sync({force: true}).then(() => {
-    Product.bulkCreate(exampleData)
-    .then(data => {
-      console.log(`saved: ${data}`)
-    })
-    .catch(err => {
-      console.log(`err: ${err}`)
-    })
-  });
+  // Product.sync({force: true}).then(() => {
+  //   Product.bulkCreate(exampleData)
+  //   .then(data => {
+  //     console.log(`saved: ${data}`)
+  //   })
+  //   .catch(err => {
+  //     console.log(`err: ${err}`)
+  //   })
+  // });
 
   let find = (id, callback) => {
   Product.findAll({
