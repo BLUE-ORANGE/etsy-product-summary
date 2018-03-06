@@ -1,10 +1,13 @@
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import ProductName from './ProductName.jsx';
 import ProductPrice from './ProductPrice.jsx';
 import ProductQA from './ProductQA.jsx';
 import ProductOverview from './ProductOverview.jsx';
+import ProductShipping from './ProductShipping.jsx';
+import ShippingInfo from './ShippingInfo.jsx';
+import style from '../style.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,9 +17,16 @@ class App extends React.Component {
       price: 100,
       itemCreation: 'Handmade',
       itemMat: 'wood',
+      shipping: false,
     };
     this.random.bind(this);
     this.fetch();
+  }
+
+  shipClick() {
+    this.setState({
+      shipping: true,
+    });
   }
 
   random() {
@@ -26,7 +36,7 @@ class App extends React.Component {
   fetch() {
     const randomNum = this.random();
     $.ajax({
-      url: `/v1/product/${randomNum}/summary`,
+      url: `http://localhost:3003/v1/product/${randomNum}/summary`,
       type: 'GET',
       success: (data) => {
         console.log('getting data!');
@@ -55,10 +65,10 @@ class App extends React.Component {
         <hr className="hr" />
         <ProductOverview create={this.state.itemCreation} mat={this.state.itemMat} />
         <hr className="hr" />
-        
+        <ProductShipping shipstate={this.state.shipping} />
       </div>
     );
   }
 }
 
-render(<App />, document.getElementById('app'));
+export default ReactDOM.render(<App />, document.getElementById('app'));

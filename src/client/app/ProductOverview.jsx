@@ -10,6 +10,7 @@ const ProductOverview = props => (
       <li> Feedback: </li>
       <li> Favorited by: </li>
     </ul>
+    <br />
   </div>
 );
 
