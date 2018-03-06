@@ -24,9 +24,16 @@ class App extends React.Component {
   }
 
   shipClick() {
-    this.setState({
-      shipping: true,
-    });
+    if (this.state.shipping) {
+      this.setState({
+        shipping: false,
+      });
+    } else {
+      this.setState({
+        shipping: true,
+      });
+    }
+    console.log(this.state.shipping);
   }
 
   random() {
@@ -65,7 +72,8 @@ class App extends React.Component {
         <hr className="hr" />
         <ProductOverview create={this.state.itemCreation} mat={this.state.itemMat} />
         <hr className="hr" />
-        <ProductShipping shipstate={this.state.shipping} />
+        <ProductShipping shipstate={this.state.shipping} shipClick={this.shipClick.bind(this)} />
+        <ShippingInfo states={this.state.shipping} />
       </div>
     );
   }

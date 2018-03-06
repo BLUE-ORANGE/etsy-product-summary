@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductShipping = () => (
+const ProductShipping = ({ shipClick }) => (
   <div>
     <hx className="productShippingHeader"> Shipping </hx>
     <div className="productShippingDes">
@@ -9,7 +9,7 @@ const ProductShipping = () => (
     <div className="productShippingState">
       From United States
     </div>
-    <button className="productShippingBtn"> Get shipping cost </button>
+    <button className="productShippingBtn" onClick={shipClick}> Get shipping cost </button>
   </div>
 );
 
