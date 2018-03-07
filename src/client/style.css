@@ -89,6 +89,7 @@
     margin-top: 12px; 
     margin-bottom: 17px;
     border: #E1E3DF 1px solid;
+    border-bottom-width: 0px;
   }
 
   ul { margin: 5px; }
@@ -124,6 +125,10 @@
     font-family: "GraphikWebfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
     font-size: 85.71%;
     font-weight: bold;
+  }
+
+  .shippingInfoCont {
+    padding-bottom: 10px;
   }
 
   .input {

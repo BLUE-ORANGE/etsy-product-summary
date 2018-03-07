@@ -18,8 +18,22 @@ class App extends React.Component {
       itemCreation: 'Handmade',
       itemMat: 'wood',
       shipping: false,
+      id: 1,
     };
     this.random.bind(this);
+    // this.fetch();
+  }
+
+  componentWillMount() {
+    let tempId = window.location.pathname.slice(12);
+    let pathId = tempId.slice(0, tempId.length - 1);
+    pathId = Number(pathId);
+    this.setState({
+      id: pathId,
+    });
+  }
+
+  componentDidMount() {
     this.fetch();
   }
 
@@ -43,7 +57,7 @@ class App extends React.Component {
   fetch() {
     const randomNum = this.random();
     $.ajax({
-      url: `/v1/product/${randomNum}/summary`,
+      url: `/v1/product/${this.state.id}/summary`,
       type: 'GET',
       success: (data) => {
         console.log('getting data!');
@@ -74,6 +88,10 @@ class App extends React.Component {
         <hr className="hr" />
         <ProductShipping shipstate={this.state.shipping} shipClick={this.shipClick.bind(this)} />
         <ShippingInfo states={this.state.shipping} />
+        <hr className="hr" />
+        <button>
+        <i class="fa fa-heart" aria-hidden="true"></i> Favorite
+        </button>
       </div>
     );
   }

@@ -6,7 +6,7 @@ const ShippingInfo = ({ states }) => {
   }
 
   return (
-    <div>
+    <div className="shippingInfoCont">
       <div className="shippingCountry">
         Country
         <br />
