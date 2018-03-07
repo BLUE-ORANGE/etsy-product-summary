@@ -1003,7 +1003,7 @@ itemCreation: 'commodo ',
 materials: 'in deserunt ' }]
 
 let Sequelize = require('sequelize');
-let sqlz = new Sequelize('etsypersonal', 'student', 'student', {
+let sqlz = new Sequelize('etsy-andrew', 'student', 'student', {
   host: 'localhost',
   port: 5432,
   dialect: 'postgres'
