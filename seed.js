@@ -6,55 +6,57 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-let productName = [];
-while(productName.length < 220) {
-let tmp = '';
-    while (tmp.length < 10) {
-      tmp += mock[getRandomInt(mock.length - 1)] + ' ';
-    }
-productName.push(tmp);}
-console.table(productName);
+// let productName = [];
+// while(productName.length < 220) {
+// let tmp = '';
+//     while (tmp.length < 10) {
+//       tmp += mock[getRandomInt(mock.length - 1)] + ' ';
+//     }
+// productName.push(tmp);}
+// console.table(productName);
 
-let productPrice = function() {
-    let num = Math.floor(Math.random() * 999);
-    return num; 
-  }
-  let numArr = []; 
-  while(numArr.length < 220) {
-    numArr.push(productPrice());
-  }
+// let productPrice = function() {
+//     let num = Math.floor(Math.random() * 999);
+//     return num; 
+//   }
+//   let numArr = []; 
+//   while(numArr.length < 220) {
+//     numArr.push(productPrice());
+//   }
 
-let productDes = []; 
-while(productDes.length < 220) {
-    let small = ''; 
-      while (small.length < 1) {
-          small += mock[getRandomInt(mock.length - 1)] + ' ';
-      }
-productDes.push(small);
-}
+// let productDes = []; 
+// while(productDes.length < 220) {
+//     let small = ''; 
+//       while (small.length < 1) {
+//           small += mock[getRandomInt(mock.length - 1)] + ' ';
+//       }
+// productDes.push(small);
+// }
 
 
-var randomPrice = [636, 172, 744, 946, 471, 858, 241, 51, 648, 230, 361, 672, 157, 43, 732, 671, 794, 150, 606, 912, 994, 482, 835, 774, 564, 542, 136, 349, 330, 555, 780, 449, 964, 394, 313, 944, 633, 806, 215, 899, 716, 51, 302, 109, 521, 269, 835, 145, 915, 953, 664, 601, 960, 301, 2, 653, 554, 602, 546, 666, 854, 449, 116, 715, 3, 113, 446, 564, 618, 674, 474, 301, 681, 91, 527, 992, 138, 145, 431, 669, 647, 47, 34, 99, 766, 104, 220, 736, 354, 163, 736, 972, 200, 51, 66, 737, 799, 450, 765, 962, 489, 245, 918, 650, 975, 496, 907, 913, 590, 207, 46, 571, 40, 675, 247, 787, 76, 553, 115, 676, 284, 439, 746, 117, 826, 781, 33, 98, 814, 882, 899, 852, 758, 614, 717, 588, 757, 842, 676, 344, 495, 867, 535, 179, 97, 33, 638, 134, 110, 220, 898, 138, 717, 700, 966, 500, 942, 892, 766, 863, 50, 824, 148, 970, 515, 16, 500, 113, 241, 506, 307, 58, 213, 588, 983, 890, 394, 849, 209, 924, 36, 573, 746, 781, 839, 251, 442, 736, 21, 509, 434, 278, 927, 632, 237, 595, 656, 192, 492, 16, 983, 971, 69, 270, 712, 478, 38, 430, 332, 439, 206, 607, 56, 688, 868, 733, 517, 438, 546, 785];
-var randomNames = ["amet, veniam, ", "magna ea reprehenderit ", "tempor eiusmod ", "exercitation ", "et cillum ", "magna voluptate ", "consequat. ", "mollit nisi ", "minim labore ", "Duis aliquip ", "Duis nulla ", "fugiat in ", "reprehenderit ", "Duis eu labore ", "ullamco nulla ", "elit, Ut cupidatat ", "in ullamco ", "exercitation ", "ullamco magna ", "consectetur ", "deserunt exercitation ", "adipiscing ", "id irure incididunt ", "velit ea sint ", "dolore non ", "adipiscing ", "culpa nulla ", "id cillum ", "qui nulla ", "dolore exercitation ", "aliquip Lorem ", "in aliqua. ", "incididunt ", "voluptate ", "ullamco adipiscing ", "sunt fugiat ", "sint est eiusmod ", "do exercitation ", "culpa consequat. ", "minim velit ", "exercitation ", "amet, ullamco ", "dolore ut ", "irure Excepteur ", "qui Ut in ", "enim aliqua. ", "Ut minim Excepteur ", "veniam, dolor ", "irure labore ", "Lorem dolore ", "dolore dolore ", "sed velit ", "Ut ut Ut in ", "anim eiusmod ", "deserunt veniam, ", "et in irure ", "aliqua. proident, ", "sed dolor ", "veniam, adipiscing ", "quis labore ", "nostrud magna ", "in quis eu ", "aute ex minim ", "Lorem voluptate ", "laboris Excepteur ", "minim ut voluptate ", "dolore est ", "eiusmod commodo ", "consectetur ", "labore aliqua. ", "aute aliqua. ", "enim anim ", "nisi aliquip ", "in ut consequat. ", "qui commodo ", "aliqua. id ", "officia elit, ", "minim ad eu ", "veniam, commodo ", "nulla esse ", "culpa tempor ", "Excepteur ", "aliqua. voluptate ", "Excepteur ", "esse ut nostrud ", "aliquip do ", "tempor proident, ", "amet, Ut incididunt ", "Duis Ut dolor ", "irure id reprehenderit ", "commodo id ", "minim laboris ", "ex in irure ", "fugiat proident, ", "veniam, do ", "nulla in enim ", "cillum qui ", "Excepteur ", "cupidatat ", "in culpa proident, ", "sint consectetur ", "mollit magna ", "sed sed minim ", "dolore qui ", "ad ea sed ", "dolor proident, ", "nostrud deserunt ", "Ut Excepteur ", "sed ea pariatur. ", "Duis exercitation ", "nostrud ut ", "sunt amet, ", "in cillum ", "incididunt ", "officia Excepteur ", "fugiat ad ", "aute consectetur ", "velit pariatur. ", "deserunt consequat. ", "minim occaecat ", "labore ad ", "irure do esse ", "voluptate ", "Excepteur ", "dolor velit ", "ea consequat. ", "esse occaecat ", "dolor incididunt ", "pariatur. ", "non aliquip ", "ullamco anim ", "consectetur ", "fugiat in ", "elit, consequat. ", "et veniam, ", "ullamco minim ", "Lorem nulla ", "Excepteur ", "velit pariatur. ", "eiusmod id ", "minim non ", "magna anim ", "aute aliqua. ", "nisi occaecat ", "sed do ipsum ", "cupidatat ", "tempor in ", "Duis officia ", "sed in ut ", "sit reprehenderit ", "consequat. ", "in ex occaecat ", "consectetur ", "in in exercitation ", "in eiusmod ", "ut sit dolore ", "dolore ea ", "velit dolore ", "dolore eu ", "aute dolor ", "eiusmod ea ", "amet, dolor ", "et sed ut ", "esse cillum ", "dolore est ", "qui sunt pariatur. ", "in nostrud ", "Lorem ut aliqua. ", "esse dolor ", "consectetur ", "labore velit ", "consectetur ", "magna Duis ", "proident, ", "officia in ", "quis tempor ", "ullamco aliquip ", "velit consectetur ", "ex enim fugiat ", "voluptate ", "officia enim ", "ipsum id ipsum ", "est dolor ", "in deserunt ", "Ut ad est ", "ut in consequat. ", "dolor in et ", "quis exercitation ", "amet, aliquip ", "dolore deserunt ", "ut qui fugiat ", "magna veniam, ", "enim magna ", "minim dolor ", "pariatur. ", "consequat. ", "commodo sit ", "sunt est nostrud ", "tempor veniam, ", "adipiscing ", "ad ea quis ", "fugiat aliquip ", "sunt adipiscing ", "sint et eiusmod ", "reprehenderit ", "labore cupidatat ", "minim esse ", "consectetur ", "sunt velit ", "esse esse ", "Duis laboris ", "do proident, ", "consequat. ", "pariatur. ", "anim velit ", "id sed in ", "qui aute qui ", "sint ex magna ", "dolore Duis ", "velit mollit "];
-var randomDes = ["consequat ", "sint ", "aliquip ", "dolore ", "nisi ", "mollit ", "veniam, ", "Lorem ", "aliquip ", "sit ", "do ", "in ", "adipiscing ", "minim ", "esse ", "adipiscing ", "do ", "magna ", "pariatur. ", "occaecat ", "sed ", "nisi ", "anim ", "do ", "Duis ", "anim ", "sed ", "consectetur ", "ipsum ", "cillum ", "sint ", "ex ", "eu ", "exercitation ", "anim ", "qui ", "officia ", "magna ", "occaecat ", "consectetur ", "magna ", "Ut ", "ullamco ", "dolor ", "Lorem ", "commodo ", "in ", "deserunt ", "voluptate ", "veniam, ", "velit ", "mollit ", "nulla ", "cupidatat ", "in ", "cupidatat ", "Duis ", "deserunt ", "Duis ", "cillum ", "irure ", "esse ", "minim ", "ullamco ", "nulla ", "non ", "sed ", "incididunt ", "ullamco ", "Lorem ", "non ", "elit, ", "do ", "aute ", "nostrud ", "ea ", "labore ", "laboris ", "ex ", "eiusmod ", "fugiat ", "labore ", "sit ", "Excepteur ", "aliqua. ", "in ", "dolore ", "exercitation ", "ad ", "ullamco ", "qui ", "sint ", "et ", "laboris ", "Duis ", "sunt ", "ipsum ", "ad ", "amet, ", "nisi ", "do ", "enim ", "consequat. ", "ut ", "tempor ", "eu ", "veniam, ", "ut ", "culpa ", "elit, ", "mollit ", "aute ", "ut ", "ipsum ", "eu ", "commodo ", "dolor ", "commodo ", "ipsum ", "est ", "Lorem ", "sint ", "non ", "occaecat ", "ut ", "officia ", "ea ", "enim ", "in ", "in ", "nulla ", "id ", "voluptate ", "reprehenderit ", "dolor ", "consequat. ", "nisi ", "ut ", "qui ", "non ", "anim ", "anim ", "enim ", "eiusmod ", "in ", "elit, ", "ea ", "laboris ", "ex ", "qui ", "magna ", "anim ", "dolor ", "proident, ", "sint ", "cupidatat ", "velit ", "in ", "deserunt ", "incididunt ", "non ", "culpa ", "ad ", "ut ", "consectetur ", "ea ", "fugiat ", "Lorem ", "cupidatat ", "esse ", "irure ", "Excepteur ", "eu ", "sed ", "voluptate ", "irure ", "Lorem ", "Lorem ", "mollit ", "fugiat ", "eiusmod ", "consequat. ", "consectetur ", "aliqua. ", "ea ", "dolor ", "est ", "voluptate ", "aliquip ", "commodo ", "ex ", "do ", "do ", "cupidatat ", "id ", "labore ", "Excepteur ", "officia ", "enim ", "consequat. ", "cillum ", "reprehenderit ", "in ", "cillum ", "ex ", "mollit ", "nulla ", "ex ", "officia ", "incididunt ", "sit ", "id ", "dolor ", "occaecat ", "in ", "Duis ", "aute ", "velit ", "ipsum ", "non "];
+// var randomPrice = [636, 172, 744, 946, 471, 858, 241, 51, 648, 230, 361, 672, 157, 43, 732, 671, 794, 150, 606, 912, 994, 482, 835, 774, 564, 542, 136, 349, 330, 555, 780, 449, 964, 394, 313, 944, 633, 806, 215, 899, 716, 51, 302, 109, 521, 269, 835, 145, 915, 953, 664, 601, 960, 301, 2, 653, 554, 602, 546, 666, 854, 449, 116, 715, 3, 113, 446, 564, 618, 674, 474, 301, 681, 91, 527, 992, 138, 145, 431, 669, 647, 47, 34, 99, 766, 104, 220, 736, 354, 163, 736, 972, 200, 51, 66, 737, 799, 450, 765, 962, 489, 245, 918, 650, 975, 496, 907, 913, 590, 207, 46, 571, 40, 675, 247, 787, 76, 553, 115, 676, 284, 439, 746, 117, 826, 781, 33, 98, 814, 882, 899, 852, 758, 614, 717, 588, 757, 842, 676, 344, 495, 867, 535, 179, 97, 33, 638, 134, 110, 220, 898, 138, 717, 700, 966, 500, 942, 892, 766, 863, 50, 824, 148, 970, 515, 16, 500, 113, 241, 506, 307, 58, 213, 588, 983, 890, 394, 849, 209, 924, 36, 573, 746, 781, 839, 251, 442, 736, 21, 509, 434, 278, 927, 632, 237, 595, 656, 192, 492, 16, 983, 971, 69, 270, 712, 478, 38, 430, 332, 439, 206, 607, 56, 688, 868, 733, 517, 438, 546, 785];
+// var randomNames = ["amet, veniam, ", "magna ea reprehenderit ", "tempor eiusmod ", "exercitation ", "et cillum ", "magna voluptate ", "consequat. ", "mollit nisi ", "minim labore ", "Duis aliquip ", "Duis nulla ", "fugiat in ", "reprehenderit ", "Duis eu labore ", "ullamco nulla ", "elit, Ut cupidatat ", "in ullamco ", "exercitation ", "ullamco magna ", "consectetur ", "deserunt exercitation ", "adipiscing ", "id irure incididunt ", "velit ea sint ", "dolore non ", "adipiscing ", "culpa nulla ", "id cillum ", "qui nulla ", "dolore exercitation ", "aliquip Lorem ", "in aliqua. ", "incididunt ", "voluptate ", "ullamco adipiscing ", "sunt fugiat ", "sint est eiusmod ", "do exercitation ", "culpa consequat. ", "minim velit ", "exercitation ", "amet, ullamco ", "dolore ut ", "irure Excepteur ", "qui Ut in ", "enim aliqua. ", "Ut minim Excepteur ", "veniam, dolor ", "irure labore ", "Lorem dolore ", "dolore dolore ", "sed velit ", "Ut ut Ut in ", "anim eiusmod ", "deserunt veniam, ", "et in irure ", "aliqua. proident, ", "sed dolor ", "veniam, adipiscing ", "quis labore ", "nostrud magna ", "in quis eu ", "aute ex minim ", "Lorem voluptate ", "laboris Excepteur ", "minim ut voluptate ", "dolore est ", "eiusmod commodo ", "consectetur ", "labore aliqua. ", "aute aliqua. ", "enim anim ", "nisi aliquip ", "in ut consequat. ", "qui commodo ", "aliqua. id ", "officia elit, ", "minim ad eu ", "veniam, commodo ", "nulla esse ", "culpa tempor ", "Excepteur ", "aliqua. voluptate ", "Excepteur ", "esse ut nostrud ", "aliquip do ", "tempor proident, ", "amet, Ut incididunt ", "Duis Ut dolor ", "irure id reprehenderit ", "commodo id ", "minim laboris ", "ex in irure ", "fugiat proident, ", "veniam, do ", "nulla in enim ", "cillum qui ", "Excepteur ", "cupidatat ", "in culpa proident, ", "sint consectetur ", "mollit magna ", "sed sed minim ", "dolore qui ", "ad ea sed ", "dolor proident, ", "nostrud deserunt ", "Ut Excepteur ", "sed ea pariatur. ", "Duis exercitation ", "nostrud ut ", "sunt amet, ", "in cillum ", "incididunt ", "officia Excepteur ", "fugiat ad ", "aute consectetur ", "velit pariatur. ", "deserunt consequat. ", "minim occaecat ", "labore ad ", "irure do esse ", "voluptate ", "Excepteur ", "dolor velit ", "ea consequat. ", "esse occaecat ", "dolor incididunt ", "pariatur. ", "non aliquip ", "ullamco anim ", "consectetur ", "fugiat in ", "elit, consequat. ", "et veniam, ", "ullamco minim ", "Lorem nulla ", "Excepteur ", "velit pariatur. ", "eiusmod id ", "minim non ", "magna anim ", "aute aliqua. ", "nisi occaecat ", "sed do ipsum ", "cupidatat ", "tempor in ", "Duis officia ", "sed in ut ", "sit reprehenderit ", "consequat. ", "in ex occaecat ", "consectetur ", "in in exercitation ", "in eiusmod ", "ut sit dolore ", "dolore ea ", "velit dolore ", "dolore eu ", "aute dolor ", "eiusmod ea ", "amet, dolor ", "et sed ut ", "esse cillum ", "dolore est ", "qui sunt pariatur. ", "in nostrud ", "Lorem ut aliqua. ", "esse dolor ", "consectetur ", "labore velit ", "consectetur ", "magna Duis ", "proident, ", "officia in ", "quis tempor ", "ullamco aliquip ", "velit consectetur ", "ex enim fugiat ", "voluptate ", "officia enim ", "ipsum id ipsum ", "est dolor ", "in deserunt ", "Ut ad est ", "ut in consequat. ", "dolor in et ", "quis exercitation ", "amet, aliquip ", "dolore deserunt ", "ut qui fugiat ", "magna veniam, ", "enim magna ", "minim dolor ", "pariatur. ", "consequat. ", "commodo sit ", "sunt est nostrud ", "tempor veniam, ", "adipiscing ", "ad ea quis ", "fugiat aliquip ", "sunt adipiscing ", "sint et eiusmod ", "reprehenderit ", "labore cupidatat ", "minim esse ", "consectetur ", "sunt velit ", "esse esse ", "Duis laboris ", "do proident, ", "consequat. ", "pariatur. ", "anim velit ", "id sed in ", "qui aute qui ", "sint ex magna ", "dolore Duis ", "velit mollit "];
+// var randomDes = ["consequat ", "sint ", "aliquip ", "dolore ", "nisi ", "mollit ", "veniam, ", "Lorem ", "aliquip ", "sit ", "do ", "in ", "adipiscing ", "minim ", "esse ", "adipiscing ", "do ", "magna ", "pariatur. ", "occaecat ", "sed ", "nisi ", "anim ", "do ", "Duis ", "anim ", "sed ", "consectetur ", "ipsum ", "cillum ", "sint ", "ex ", "eu ", "exercitation ", "anim ", "qui ", "officia ", "magna ", "occaecat ", "consectetur ", "magna ", "Ut ", "ullamco ", "dolor ", "Lorem ", "commodo ", "in ", "deserunt ", "voluptate ", "veniam, ", "velit ", "mollit ", "nulla ", "cupidatat ", "in ", "cupidatat ", "Duis ", "deserunt ", "Duis ", "cillum ", "irure ", "esse ", "minim ", "ullamco ", "nulla ", "non ", "sed ", "incididunt ", "ullamco ", "Lorem ", "non ", "elit, ", "do ", "aute ", "nostrud ", "ea ", "labore ", "laboris ", "ex ", "eiusmod ", "fugiat ", "labore ", "sit ", "Excepteur ", "aliqua. ", "in ", "dolore ", "exercitation ", "ad ", "ullamco ", "qui ", "sint ", "et ", "laboris ", "Duis ", "sunt ", "ipsum ", "ad ", "amet, ", "nisi ", "do ", "enim ", "consequat. ", "ut ", "tempor ", "eu ", "veniam, ", "ut ", "culpa ", "elit, ", "mollit ", "aute ", "ut ", "ipsum ", "eu ", "commodo ", "dolor ", "commodo ", "ipsum ", "est ", "Lorem ", "sint ", "non ", "occaecat ", "ut ", "officia ", "ea ", "enim ", "in ", "in ", "nulla ", "id ", "voluptate ", "reprehenderit ", "dolor ", "consequat. ", "nisi ", "ut ", "qui ", "non ", "anim ", "anim ", "enim ", "eiusmod ", "in ", "elit, ", "ea ", "laboris ", "ex ", "qui ", "magna ", "anim ", "dolor ", "proident, ", "sint ", "cupidatat ", "velit ", "in ", "deserunt ", "incididunt ", "non ", "culpa ", "ad ", "ut ", "consectetur ", "ea ", "fugiat ", "Lorem ", "cupidatat ", "esse ", "irure ", "Excepteur ", "eu ", "sed ", "voluptate ", "irure ", "Lorem ", "Lorem ", "mollit ", "fugiat ", "eiusmod ", "consequat. ", "consectetur ", "aliqua. ", "ea ", "dolor ", "est ", "voluptate ", "aliquip ", "commodo ", "ex ", "do ", "do ", "cupidatat ", "id ", "labore ", "Excepteur ", "officia ", "enim ", "consequat. ", "cillum ", "reprehenderit ", "in ", "cillum ", "ex ", "mollit ", "nulla ", "ex ", "officia ", "incididunt ", "sit ", "id ", "dolor ", "occaecat ", "in ", "Duis ", "aute ", "velit ", "ipsum ", "non "];
 
-var allObj = []; 
+// var allObj = []; 
 
-for (var i = 0; i < 220; i++) {
-    let newObj = {};
+// for (var i = 0; i < 220; i++) {
+//     let newObj = {};
 
-    newObj.name = randomNames[getRandomInt(randomNames.length - 1)];
-    newObj.description = randomDes[getRandomInt(randomDes.length-1)];
-    newObj.price = randomPrice[getRandomInt(randomPrice.length-1)];
-    newObj.itemCreation = randomDes[getRandomInt(randomDes.length-1)];
-    newObj.materials = randomNames[getRandomInt(randomNames.length-1)];
+//     newObj.name = randomNames[getRandomInt(randomNames.length - 1)];
+//     newObj.description = randomDes[getRandomInt(randomDes.length-1)];
+//     newObj.price = randomPrice[getRandomInt(randomPrice.length-1)];
+//     newObj.itemCreation = randomDes[getRandomInt(randomDes.length-1)];
+//     newObj.materials = randomNames[getRandomInt(randomNames.length-1)];
     
-    allObj.push(newObj);
-}
+//     allObj.push(newObj);
+// }
 
-console.log(allObj);
+// console.log(allObj);
 
-var exampleData = [ { name: 'aute aliqua. ',
+const exampleData = [
+  {
+    name: 'aute aliqua. ',
 description: 'nulla ',
 price: 675,
 itemCreation: 'elit, ',
@@ -63,7 +65,8 @@ materials: 'id sed in ' },
 description: 'non ',
 price: 852,
 itemCreation: 'do ',
-materials: 'esse ut nostrud ' },
+materials: 'esse ut nostrud ' 
+  },
 { name: 'et veniam, ',
 description: 'nisi ',
 price: 555,
@@ -1054,3 +1057,31 @@ description: 'ut ',
 price: 972,
 itemCreation: 'commodo ',
 materials: 'in deserunt ' }]
+
+let Sequelize = require('sequelize');
+require('dotenv').config();
+
+let sqlz = new Sequelize(process.env.DB_HOST);
+
+const Product = sqlz.define('product', {
+    name: Sequelize.TEXT,
+    description: Sequelize.TEXT,
+    price: Sequelize["DOUBLE PRECISION"],
+    itemCreation: Sequelize.TEXT,
+    materials: Sequelize.TEXT,
+
+  },{
+    schema: 'public'
+  })
+
+
+  Product.sync({force: true}).then(() => {
+    Product.bulkCreate(exampleData)
+    .then(data => {
+      sqlz.close();
+      console.log(`saved: ${data}`)
+    })
+    .catch(err => {
+      console.log(`err: ${err}`)
+    })
+  });

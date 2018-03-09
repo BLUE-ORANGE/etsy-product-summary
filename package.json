@@ -7,12 +7,15 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "react-dev": "webpack -d --watch",
-    "server-dev": "nodemon server/index.js",
-    "seedData": "node database/index.js",
+    "react": "webpack -d --watch",
+    "webpack": "webpack",
+    "server": "node server/index.js",
+    "serv": "nodemon server/index.js",
+    "seedData": "node seed.js",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "start": "npm run-script seedData && npm run-script webpack && npm run-script server"
   },
   "jest": {
     "setupFiles": [
@@ -28,6 +31,7 @@
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "css-loader": "^0.28.10",
+    "dotenv": "^5.0.1",
     "express": "^4.16.2",
     "html-webpack-plugin": "^2.30.1",
     "jquery": "^3.3.1",

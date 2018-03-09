@@ -1,0 +1,16 @@
+version: '3.1'
+services:
+  web:
+    image: etsyproductsummay_web:latest
+    ports:
+      - 5432:5432
+      - 3002:3002
+    environment:
+      DB_HOST: postgres://student:student@db/etsy-andrew
+      
+  db:
+    image: postgres:9.6.2-alpine
+    environment:
+      POSTGRES_USER: student
+      POSTGRES_DB: etsy-andrew
+      POSTGRES_PW: student
