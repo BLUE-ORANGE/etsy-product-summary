@@ -57,7 +57,7 @@ class App extends React.Component {
   fetch() {
     const randomNum = this.random();
     $.ajax({
-      url: `/v1/product/${this.state.id}/summary`,
+      url: `http://localhost:3002/v1/product/${this.state.id}/summary`,
       type: 'GET',
       success: (data) => {
         console.log('getting data!');
